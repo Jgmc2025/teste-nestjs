@@ -92,38 +92,48 @@ Para receber um pedido, é necessário executar o docker compose up no terminal 
 
 * Para acessar o site, é necessário entrar no link que foi criado para loja, que no meu caso foi https://joao-teste-6240.myshopify.com/
 
-![][image1]
+<img width="1366" height="768" alt="Captura de tela 2025-11-10 190810" src="https://github.com/user-attachments/assets/f0cbce53-7b91-4881-a62f-232297c79e13" />
+
 
 * Após entrar com a senha, que no meu caso foi apenas um “.” (um ponto) como teste, você poderá ver os produtos da loja e começar uma compra.
 
-![][image2]
+<img width="1366" height="768" alt="Captura de tela 2025-11-10 190841" src="https://github.com/user-attachments/assets/18e6de4d-052f-467a-a8fe-ecfc6b74ccca" />
+
 
 * Após a sessão de compra, você será direcionado para registro de dados para o pedido;
 
 
-![][image3]
+<img width="1366" height="768" alt="Captura de tela 2025-11-10 190908" src="https://github.com/user-attachments/assets/bb7a7d8b-92f1-4cd5-9560-14811f1e87ed" />
+
 
 * Depois do preenchimento, uma mensagem de confirmação será enviada na tela e no email registrado;
 
 
-![][image4]
+<img width="1366" height="768" alt="Captura de tela 2025-11-10 190943" src="https://github.com/user-attachments/assets/00db54f0-41d8-490e-a11d-29314685b62e" />
+
 
 * Assim, nesse processo, seu primeiro pedido será salvo no link [https://noncogently-noncircular-ian.ngrok-free.dev/](https://noncogently-noncircular-ian.ngrok-free.dev/) gerado pelo Ngrok;
 
-![][image5]
+<img width="1366" height="768" alt="Captura de tela 2025-11-10 190957" src="https://github.com/user-attachments/assets/317806c6-1708-407e-8def-ede03fc11c0e" />
+
 
 * Também será possível visualizar as informações do pedido no terminal da raiz do seu projeto;
 
-![][image6]
+<img width="1366" height="768" alt="Captura de tela 2025-11-10 191029" src="https://github.com/user-attachments/assets/d0cfc72b-c365-4e86-91b1-2073c9c7226c" />
+
 
 * Para acessar as webhooks, entre no Ngrok  após rodá-lo no terminal;
 
-![][image7]  
-![][image8]
+<img width="1366" height="768" alt="Captura de tela 2025-11-10 191110" src="https://github.com/user-attachments/assets/b9ead011-efc5-4b28-bb86-e77bc2ca6139" />
+
+<img width="1366" height="768" alt="Captura de tela 2025-11-10 191132" src="https://github.com/user-attachments/assets/8d5345c7-bcdf-40ed-abbe-3aca23a642f1" />
+
 
 * Por fim, você pode instalar um visualizador de banco de dados. No caso em questão, o banco indicado foi o Postgres e escolhi o DBeaver para ver os dados nas minhas tabelas de pedidos e vendas;
 
-![][image9]  
-![][image10]
+<img width="1366" height="768" alt="Captura de tela 2025-11-10 191217" src="https://github.com/user-attachments/assets/6b50c10a-c2db-45f2-998d-0a23e898f651" />
+
+<img width="1366" height="768" alt="Captura de tela 2025-11-10 191232" src="https://github.com/user-attachments/assets/b654a069-ebd4-462c-a6a7-13141be4e96c" />
+
 
 Observação: podem ser criados quantos pedidos forem necessários, cada um terá um ID para diferenciá-los.
