@@ -1,0 +1,35 @@
+services:
+  api:
+    build: . 
+    container_name: meu-nest-api
+    ports:
+      - "3000:3000" 
+    volumes:
+      - .:/usr/src/app 
+      - /usr/src/app/node_modules 
+    environment:
+      - DATABASE_URL=postgres://user:password@db:5432/nest_db
+    depends_on:
+      - db
+    networks:
+      - app-network
+    command: npm run start:dev
+  db:
+    image: postgres:16-alpine
+    container_name: meu-postgres-db
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=nest_db
+    ports:
+      - "5432:5432" 
+    volumes:
+      - pgdata:/var/lib/postgresql/data 
+    networks:
+      - app-network
+    restart: unless-stopped 
+volumes:
+  pgdata: 
+networks:
+  app-network:
+    driver: bridge
